@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="Survey Form, Feedback Form, Customer Feedback, Accessible Form, Online Survey, Service Rating">
+  <title>Accessible Survey Form</title>
+  <link rel="icon" href="assets/images.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2 id="formTitle">Survey Form</h2>
+
+    <form aria-labelledby="formTitle">
+      <!-- Basic details -->
+      <label for="fullname">Full Name:</label>
+      <input id="fullname" type="text" name="fullname" placeholder="Enter your name" required />
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email" required />
+
+      <label for="password">Password:</label>
+      <input id="password" type="password" name="password" placeholder="Create a password" required />
+
+      <label for="visit-date">Date of Visit:</label>
+      <input id="visit-date" type="date" name="visit-date" required />
+
+      <!-- Rating & preferences -->
+      <label for="rating">Rate our Service (0–10):</label>
+      <input id="rating" type="range" name="rating" min="0" max="10" aria-valuemin="0" aria-valuemax="10" />
+
+      <label for="service">Choose your favorite service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Select--</option>
+        <option value="support">Customer Support</option>
+        <option value="speed">Speed of Service</option>
+        <option value="quality">Product Quality</option>
+        <option value="pricing">Pricing</option>
+      </select>
+
+      <!-- Grouped radio buttons -->
+      <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <label><input type="radio" name="contact" value="email" required /> Email</label>
+        <label><input type="radio" name="contact" value="phone" /> Phone</label>
+      </fieldset>
+
+      <!-- Grouped checkboxes -->
+      <fieldset>
+        <legend>Interested In:</legend>
+        <label><input type="checkbox" name="interest" value="offers" /> Special Offers</label>
+        <label><input type="checkbox" name="interest" value="news" /> Newsletter</label>
+        <label><input type="checkbox" name="interest" value="events" /> Events</label>
+      </fieldset>
+
+      <label for="feedback">Additional Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Your comments..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
