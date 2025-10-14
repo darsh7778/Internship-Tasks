@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal - Login Form</title>
+  <link rel="stylesheet" href="Modal.css">
+  
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h1>Welcome Back</h1>
+      <p>Please enter your details to sign in</p>
+    </div>
+
+    <form action="#welcome">
+      <div class="form-group">
+        <label for="username"><p>Username or Email</p></label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div class="form-group">
+        <label for="password"><p>Password</p></label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <button type="submit" class="login-button">Sign In</button>
+      <a href="#" class="forgot-password">Forgot password?</a>
+    </form>
+  </div>
+
+  <!-- Modal -->
+  <div id="welcome" class="overlay">
+    <div class="modal">
+      <h2>Welcome!</h2>
+      <p>You have successfully logged in 🎉</p>
+      <a href="#" class="close-btn">Close</a>
+    </div>
+  </div>
+</body>
+</html>

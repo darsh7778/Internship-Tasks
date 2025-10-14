@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gourmet Delights | Fine Dining Experience</title>
+  <link rel="stylesheet" href="restaurant-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Hidden checkbox for mobile menu toggle -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">Gourmet<span>Delights</span></a>
+        
+        <!-- Mobile menu button (hamburger) -->
+        <label for="menu-toggle" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#" class="btn nav-link">Reservations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Experience Culinary Excellence</h1>
+        <p>Discover the perfect blend of taste and tradition in every bite</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Special Menu</h2>
+        <p>Handcrafted with love and the finest ingredients</p>
+      </div>
+      
+      <div class="menu-grid">
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1701579231320-cc2f7acad3cd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070" alt="Paneer Tikka" class="menu-img">
+          <div class="menu-content">
+            <h3>Paneer Tikka</h3>
+            <p>Cubes of paneer marinated in yogurt and spices, grilled or roasted</p>
+            <span class="price">$24.99</span>
+          </div>
+        </div>
+        
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1622268805718-ca073548d4ad?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2205" alt="Stuffed Mushroom" class="menu-img">
+          <div class="menu-content">
+            <h3>Stuffed Mushroom</h3>
+            <p>Mushrooms stuffed with spiced paneer or cheese mixture and baked.</p>
+            <span class="price">$32.99</span>
+          </div>
+        </div>
+        
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1599307767316-776533bb941c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2050" alt="Hara Bhara Kabab" class="menu-img">
+          <div class="menu-content">
+            <h3>Hara Bhara Kabab</h3>
+            <p>pinach, peas, and potato patties lightly spiced and shallow-fried.</p>
+            <span class="price">$19.99</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 50px;">
+        <a href="#" class="btn">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Our Restaurant">
+        </div>
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>Founded in 2010, Gourmet Delights has been serving exceptional cuisine in a warm and inviting atmosphere. Our passion for food and dedication to quality has made us a beloved destination for food enthusiasts.</p>
+          <p>We source only the finest ingredients from local farmers and suppliers, ensuring every dish is a celebration of flavor and freshness.</p>
+          <a href="#" class="btn" style="margin-top: 20px;">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you</p>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>123 Gourmet Street, Foodie City, FC 12345</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>info@gourmetdelights.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send us a Message</h3>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2023 Gourmet Delights. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+</body>
+</html>

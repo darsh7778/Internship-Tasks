@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+
+.login-header h1 {
+  color: #180296;
+  margin-bottom: 20px;
+}
+
+.login-header p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form-group p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-button {
+  background: #180296;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 95%;
+  font-size: 16px;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.login-button:hover {
+  background: #8c04f4;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Modal Overlay (Hidden by default) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show modal when targeted */
+#welcome:target {
+  display: flex;
+}
+
+/* Modal Box */
+.modal {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.4s ease;
+}
+
+.modal h2 {
+  color: #180296;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  color: #333;
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #180296;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.close-btn:hover {
+  background: #3e006e;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
