@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     
     // Set initial theme based on user preference or saved preference
-    const currentTheme = localStorage.getItem('theme') || 
-                        (prefersDarkScheme.matches ? 'dark' : 'light');
+    const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
     
     // Apply initial theme
     document.documentElement.setAttribute('data-theme', currentTheme);
