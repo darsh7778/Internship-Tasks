@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is a calculator</h1>
+    <h2>step 1 - Enter the first number</h2>
+    <h2>step 2 - Enter the second number</h2>
+    <h2>step 3 - Enter operation for example - +, -, *, /</h2>
+
+    <h2>see the result...</h2>
+
+    <script>
+      let num1 = parseInt(prompt("Enter the first number:"));
+
+      let num2 = parseInt(prompt("Enter the second number:"));
+
+      // Ask the user for the operation
+      let operation = prompt("Enter operation (+, -, *, /):");
+
+      // Initialize result
+      let result;
+
+      // Perform calculation based on operation
+      if (operation === "+") {
+        result = num1 + num2;
+      } else if (operation === "-") {
+        result = num1 - num2;
+      } else if (operation === "*") {
+        result = num1 * num2;
+      } else if (operation === "/") {
+        if (num2 === 0) {
+          result = "Error! Division by zero.";
+        } else {
+          result = num1 / num2;
+        }
+      } else {
+        result = "Invalid operation!";
+      }
+
+      // Show result
+      alert("Result: " + result);
+    </script>
+  </body>
+</html>

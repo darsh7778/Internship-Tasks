@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Generate a random number between 1 and 10
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+
+      alert("Welcome to the Number Guessing Game!\nGuess a number between 1 and 10.");
+
+      let guessedCorrectly = false;
+
+      while (!guessedCorrectly) {
+        let guess = parseInt(prompt("Enter your guess:"));
+
+        if (guess === randomNumber) {
+          alert(`🎉 Congratulations! You guessed it right. The number was ${randomNumber}.`);
+          guessedCorrectly = true;
+        } else if (guess < randomNumber) {
+          alert("Too low! Try again.");
+        } else if (guess > randomNumber) {
+          alert("Too high! Try again.");
+        }
+      }
+    </script>
+  </body>
+</html>
